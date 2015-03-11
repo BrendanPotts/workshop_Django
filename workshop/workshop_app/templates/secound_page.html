@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+<p>This is the new secound page</p>
+<ul>
+	{% for entry in entries %}
+	<lI>{{ entry.lable }}</lI>
+	{% endfor %}
+</ul>
+<a href="/workshop_app">Access the first page</a>
+<br>
+<a href="/workshop_app/form_test/">Access to form page</a>
+{% endblock content %}

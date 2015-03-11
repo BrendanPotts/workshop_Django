@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+<form method="POST">
+{% csrf_token %}
+{{ form }}
+</form>
+<br>
+<a href="/workshop_app/">Access to the first page</a>
+<br>
+<a href="/workshop_app/secound_page/">Access to the secound page</a>
+{% endblock content %}
